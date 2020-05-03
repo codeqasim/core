@@ -9,4 +9,11 @@ class Home extends CI_Controller {
 	    $data["main_content"] = "home";
 		$this->load->view('main', $data);
 	}
+
+    public function contact()
+	{
+	    $data["title"] = "Contact";
+	    $data["main_content"] = "contact";
+		$this->load->view('main', $data);
+	}
 }

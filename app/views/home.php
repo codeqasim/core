@@ -41,7 +41,7 @@
                     <div class="search_contents">
                         <div class="content content--active row">
                             <div class="c12">
-                              <form method="get" action="<?=$root;?>hotels/">
+                              <form method="get" action="<?php echo base_url(); ?>hotels/">
                                 <div class="row">
                                     <label class="mdc-text-field  mdc-text-field--with-leading-icon">
                                         <i class="material-icons mdc-text-field__icon">pin_drop</i>
@@ -136,7 +136,7 @@
     var city = $('#city').val();
     var checkin =  $('#checkin').val();
     var checkout =  $('#checkout').val();
-    window.location = '<?=$root;?>hotels/'+city+'/'+checkin+'/'+checkout;
+    window.location = '<?php echo base_url(); ?>hotels/'+city+'/'+checkin+'/'+checkout;
     return false;
     }
     </script>
