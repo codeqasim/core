@@ -1,3 +1,4 @@
+<?php include "config.php"; ?>
 <!DOCTYPE html>
 <html lang="en" dir="">
 <head>
@@ -8,7 +9,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
 
-        <title>Material</title>
+        <title>Travel</title>
 
         <link rel="stylesheet" href="<?= $root; ?>assets/css/style.css">
         <script src="<?= $root; ?>assets/js/app.js"></script>
@@ -228,9 +229,7 @@
                 <div class="mdc-top-app-bar__row">
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
                         <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#">menu</button>
-                        <span class="mdc-top-app-bar__title" href="/" target="_blank" style="color: inherit;">Travel</span>
-                        <a href="about">about</a>
-                        <a href="contact">contact</a>
+                        <span class="mdc-top-app-bar__title" href="/" target="_blank" style="color: inherit;"><?=$appname; ?></span>
                     </section>
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
                         <a href="/" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Download">file_download</a>
@@ -251,7 +250,7 @@
             </header>
             <aside class="mdc-drawer mdc-drawer--modal">
                 <div class="mdc-drawer__header">
-                    <h3 class="mdc-drawer__title">AppName</h3>
+                    <h3 class="mdc-drawer__title"><?=$appname; ?></h3>
                     <h6 class="mdc-drawer__subtitle">Slogan goes here</h6>
                 </div>
                 <div class="mdc-drawer__content">

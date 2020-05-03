@@ -20,8 +20,8 @@ ul{list-style-type: none; }
 
 html { background-color: #FFFFFF;scroll-behavior: smooth;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; }
 body { text-rendering: optimizeLegibility; font-family: 'Muli Regular',sans-serif;letter-spacing:0px;margin:0;scroll-behavior: smooth; }
-/*body { animation: fadeIn ease 0.4s; -webkit-animation: fadeIn ease 0.2s; -moz-animation: fadeIn ease 0.2s; -o-animation: fadeIn ease 0.2s; -ms-animation: fadeIn ease` 0.2s;scroll-behavior: smooth; }
-*/
+body { animation: fadeIn ease 0.4s; -webkit-animation: fadeIn ease 0.2s; -moz-animation: fadeIn ease 0.2s; -o-animation: fadeIn ease 0.2s; -ms-animation: fadeIn ease` 0.2s;scroll-behavior: smooth; }
+
 strong,b,.bold{ font-family: 'Muli ExtraBold',sans-serif; }
 
 @keyframes body{0%{opacity:0}
