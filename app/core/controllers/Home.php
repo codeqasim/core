@@ -5,6 +5,8 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('home');
+	    $data["title"] = "Travel";
+	    $data["main_content"] = "home";
+		$this->load->view('main', $data);
 	}
 }

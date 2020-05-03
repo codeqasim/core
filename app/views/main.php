@@ -1,4 +1,3 @@
-<?php include "config.php"; ?>
 <!DOCTYPE html>
 <html lang="en" dir="">
 <head>
@@ -9,10 +8,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
 
-        <title>Travel</title>
+        <title><?=$title;?></title>
 
-        <link rel="stylesheet" href="<?= $root; ?>assets/css/style.css">
-        <script src="<?= $root; ?>assets/js/app.js"></script>
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+        <script src="<?php echo base_url(); ?>assets/js/app.js"></script>
 
         <script>
         /*! jQuery v1.11.2 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
@@ -216,12 +215,6 @@
         return"none"===b?"":b},e.prototype.cacheAnimationName=function(a){return this.animationNameCache.set(a,this.animationName(a))},e.prototype.cachedAnimationName=function(a){return this.animationNameCache.get(a)},e.prototype.scrollHandler=function(){return this.scrolled=!0},e.prototype.scrollCallback=function(){var a;return!this.scrolled||(this.scrolled=!1,this.boxes=function(){var b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],a&&(this.isVisible(a)?this.show(a):e.push(a));return e}.call(this),this.boxes.length||this.config.live)?void 0:this.stop()},e.prototype.offsetTop=function(a){for(var b;void 0===a.offsetTop;)a=a.parentNode;for(b=a.offsetTop;a=a.offsetParent;)b+=a.offsetTop;return b},e.prototype.isVisible=function(a){var b,c,d,e,f;return c=a.getAttribute("data-wow-offset")||this.config.offset,f=window.pageYOffset,e=f+Math.min(this.element.clientHeight,this.util().innerHeight())-c,d=this.offsetTop(a),b=d+a.clientHeight,e>=d&&b>=f},e.prototype.util=function(){return null!=this._util?this._util:this._util=new b},e.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},e}()}).call(this);new WOW().init()
         </script>
 
-        <script src="<?= $root; ?>assets/js/jquery.pjax.js"></script>
-
-        <script>
-        $(document).pjax('a', '#pjax-container')
-        </script>
-
         </head>
         <body>
             <!-- Top App Bar -->
@@ -229,7 +222,7 @@
                 <div class="mdc-top-app-bar__row">
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
                         <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#">menu</button>
-                        <span class="mdc-top-app-bar__title" href="/" target="_blank" style="color: inherit;"><?=$appname; ?></span>
+                        <span class="mdc-top-app-bar__title" href="/" target="_blank" style="color: inherit;">Travel</span>
                     </section>
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
                         <a href="/" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Download">file_download</a>
@@ -250,20 +243,20 @@
             </header>
             <aside class="mdc-drawer mdc-drawer--modal">
                 <div class="mdc-drawer__header">
-                    <h3 class="mdc-drawer__title"><?=$appname; ?></h3>
+                    <h3 class="mdc-drawer__title">Travel</h3>
                     <h6 class="mdc-drawer__subtitle">Slogan goes here</h6>
                 </div>
                 <div class="mdc-drawer__content">
                     <nav class="mdc-list">
-                        <a class="mdc-list-item mdc-list-item" href="<?=$root;?>" aria-current="page">
+                        <a class="mdc-list-item mdc-list-item" href="<?php echo base_url(); ?>" aria-current="page">
                         <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
                         <span class="mdc-list-item__text">Home</span>
                         </a>
-                        <a class="mdc-list-item mdc-list-item--activated" href="<?=$root;?>about" aria-current="page">
+                        <a class="mdc-list-item mdc-list-item--activated" href="<?php echo base_url(); ?>about" aria-current="page">
                         <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
                         <span class="mdc-list-item__text">About</span>
                         </a>
-                        <a class="mdc-list-item" href="<?=$root;?>contact">
+                        <a class="mdc-list-item" href="<?php echo base_url(); ?>contact">
                         <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
                         <span class="mdc-list-item__text">Contact</span>
                         </a>
@@ -278,5 +271,9 @@
             <div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
             <div class="mdc-drawer-app-content main-content">
 
+            <?php $this->load->view($main_content); ?>
 
-            <div id="pjax-container"></div>
+            </div>
+            <script src="<?php echo base_url(); ?>assets/js/init.js"></script>
+            </body>
+            </html>
