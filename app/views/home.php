@@ -1,9 +1,9 @@
     <!-- Content -->
     <section class="hero" style="background-image: url('assets/img/hero.jpg')">
         <div class="container">
-            <div class="c5 bgw searchbox">
+            <div class="c6 bgw searchbox">
                 <div class="row">
-                    <div class="mdc-tab-bar" role="tablist">
+                    <div class="mdc-tab-bar" role="tablist" data-mdc-auto-init="MDCTabBar">
                         <div class="mdc-tab-scroller">
                             <div class="mdc-tab-scroller__scroll-area">
                                 <div class="mdc-tab-scroller__scroll-content">
@@ -43,10 +43,10 @@
                             <div class="c12">
                               <form method="get" action="<?php echo base_url(); ?>hotels/">
                                 <div class="row">
-                                    <label class="mdc-text-field  mdc-text-field--with-leading-icon">
+                                    <label class="mdc-text-field  mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField">
                                         <i class="material-icons mdc-text-field__icon">pin_drop</i>
                                         <div class="mdc-text-field__ripple"></div>
-                                        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id" id="city" name="city">
+                                        <input class="mdc-text-field__input" type="search" aria-labelledby="my-label-id" id="city" name="city">
                                         <span class="mdc-floating-label" id="my-label-id">City Name.</span>
                                         <div class="mdc-line-ripple"></div>
                                     </label>
@@ -65,10 +65,10 @@
                                 <div class="row group">
                                     <div class="c6">
                                         <div class="row">
-                                            <label class="mdc-text-field  mdc-text-field--with-leading-icon">
+                                            <label class="mdc-text-field  mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField">
                                                 <i class="material-icons mdc-text-field__icon">calendar_today</i>
                                                 <div class="mdc-text-field__ripple"></div>
-                                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id" id="checkin" name="checkin">
+                                                <input class="mdc-text-field__input" type="date" aria-labelledby="my-label-id" id="checkin" name="checkin">
                                                 <span class="mdc-floating-label" id="check">Checkin</span>
                                                 <div class="mdc-line-ripple"></div>
                                             </label>
@@ -76,10 +76,10 @@
                                     </div>
                                     <div class="c6">
                                         <div class="row">
-                                            <label class="mdc-text-field  mdc-text-field--with-leading-icon">
+                                            <label class="mdc-text-field  mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField">
                                                 <i class="material-icons mdc-text-field__icon">calendar_today</i>
                                                 <div class="mdc-text-field__ripple"></div>
-                                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id" id="checkout" name="checkout">
+                                                <input class="mdc-text-field__input" type="date" aria-labelledby="my-label-id" id="checkout" name="checkout">
                                                 <span class="mdc-floating-label" id="my-label-id">Checkout</span>
                                                 <div class="mdc-line-ripple"></div>
                                             </label>
@@ -94,7 +94,7 @@
                                             <span id="demo-label" class="mdc-floating-label mdc-floating-label--float-above">Travelers</span>
                                             <div class="mdc-line-ripple"></div>
                                         </div>
-                                        <div class="mdc-select__menu mdc-menu mdc-menu-surface" role="listbox">
+                                        <div class="mdc-select__menu mdc-menu mdc-menu-surface" role="listbox" data-mdc-auto-init="MDCTextField">
                                             <ul class="mdc-list">
                                                 <li class="mdc-list-item mdc-list-item--selected" data-value="grains" role="option">
                                                     2 Adults
@@ -109,6 +109,9 @@
                                         </div>
                                     </div>
                                     <!--<button onclick="selectFruits()">Select Fruits</button>-->
+
+
+                                    
                                 </div>
                                 <div class="group">
                                     <div class="row">

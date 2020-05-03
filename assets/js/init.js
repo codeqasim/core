@@ -24,10 +24,10 @@ tabBar.listen('MDCTabBar:activated', function(event) {
 });
 
 // Input
-const textField = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
+// const textField = new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
 
 // menu 
-const menuElements = document.querySelector('.mdc-menu');
+const menuElements = document.querySelector('.account');
 const menu = mdc.menu.MDCMenu.attachTo(menuElements);
 menu.setAbsolutePosition(100, 100);
 
@@ -35,8 +35,9 @@ document.getElementById('account').addEventListener('click', () => {
   menu.open = !menu.open;
 });
 
+// select
+const select = new mdc.select.MDCSelect(document.querySelector('.mdc-select'));
 
-const select1 = new mdc.select.MDCSelect(document.querySelector('.mdc-select'));
 
 // select1.listen('MDCSelect:change', () => {
 //   alert(`changed to ${select1.value}`);

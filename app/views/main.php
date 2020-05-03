@@ -225,19 +225,53 @@
                         <span class="mdc-top-app-bar__title" href="/" target="_blank" style="color: inherit;">Travel</span>
                     </section>
                     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-                        <a href="/" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Download">file_download</a>
+                        <a href="/" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Download">more_vert</a>
+
                         <button class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Print this page">phone_iphone</button>
                         <div class="mdc-menu-surface--anchor">
-                            <button id="account" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="Bookmark this page">account_circle</button>
-                            <div class="mdc-menu mdc-menu-surface">
+                            <button id="account" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="account">account_circle</button>
+                            <div class="account mdc-menu mdc-menu-surface">
                                 <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-                                    <li class="mdc-list-item" role="menuitem"><a href="login"><span class="mdc-list-item__text">Login</span></a></li>
-                                    <li class="mdc-list-item" role="menuitem"><a href="signup"><span class="mdc-list-item__text">Signup</span></a></li>
+                                    <li class="mdc-list-item" role="menuitem"><a href="login"><span class="mdc-list-item__text"><span class="material-icons"> directions_run </span> Login</span></a></li>
+                                    <li class="mdc-list-item" role="menuitem"><a href="signup"><span class="mdc-list-item__text"><span class="material-icons"> transfer_within_a_station </span> Signup</span></a></li>
                                     <li class="mdc-list-divider" role="separator"></li>
                                     <li class="mdc-list-item" role="menuitem"><a href="logout"><span class="mdc-list-item__text">Logout</span></a></li>
                                 </ul>
                             </div>
                         </div>
+
+
+
+
+<!--
+ <button id="options" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" aria-label="options">account_circle</button>
+
+
+<div class="options mdc-menu mdc-menu-surface">
+  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+    <li>
+      <ul class="mdc-menu__selection-group">
+        <li class="mdc-list-item" role="menuitem">
+          <span class='mdc-list-item__graphic mdc-menu__selection-group-icon material-icons'>
+            transfer_within_a_station
+          </span>
+          <span class="mdc-list-item__text">Login</span>
+        </li>
+        <li class="mdc-list-item" role="menuitem">
+          <span class="mdc-list-item__graphic mdc-menu__selection-group-icon">
+           <span class="material-icons"> transfer_within_a_station </span>
+          </span>
+          <span class="mdc-list-item__text">Signup</span>
+        </li>
+      </ul>
+    </li>
+    <li class="mdc-list-divider" role="separator"></li>
+    <li class="mdc-list-item" role="menuitem">
+      <span class="mdc-list-item__text">Logout</span>
+    </li>
+  </ul>
+</div>-->
+
                     </section>
                 </div>
             </header>
@@ -253,17 +287,17 @@
                         <span class="mdc-list-item__text">Home</span>
                         </a>
                         <a class="mdc-list-item mdc-list-item--activated" href="<?php echo base_url(); ?>about" aria-current="page">
-                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">sms_failed</i>
                         <span class="mdc-list-item__text">About</span>
                         </a>
                         <a class="mdc-list-item" href="<?php echo base_url(); ?>contact">
-                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">ring_volume</i>
                         <span class="mdc-list-item__text">Contact</span>
                         </a>
-                        <a class="mdc-list-item" href="#">
+                        <!--<a class="mdc-list-item" href="#">
                         <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
                         <span class="mdc-list-item__text">Drafts</span>
-                        </a>
+                        </a>-->
                     </nav>
                 </div>
             </aside>
