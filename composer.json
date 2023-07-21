@@ -1,0 +1,12 @@
+{
+    "require": {
+        "catfan/medoo": "^2.1",
+        "grocery-crud/enterprise": "3.*.*@dev"
+    },
+    "repositories": {
+        "grocery-crud": {
+            "type": "artifact",
+            "url": "artifacts/"
+        }
+    }
+}
